@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/LL">
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello"
+    />
+
+<RelativeLayout android:layout_width="match_parent" 
+    android:id="@+id/relativeLayout1" 
+    android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content" 
+        android:id="@+id/textView1" 
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentLeft="true" 
+        android:text="Name:"></TextView>
+
+    <EditText android:inputType="textPersonName" 
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/textView1" 
+        android:layout_alignParentLeft="true"
+         android:layout_width="match_parent" 
+         android:id="@+id/txtName">
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <TextView android:layout_width="wrap_content" 
+        android:id="@+id/textView2" 
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/txtName"
+         android:layout_alignParentLeft="true" 
+         android:layout_marginTop="24dp" 
+         android:text="Age:"></TextView>
+
+    <EditText android:inputType="phone" android:layout_height="wrap_content" android:layout_below="@+id/textView2" android:layout_alignParentLeft="true" android:layout_width="match_parent" android:id="@+id/txtAge"></EditText>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/txtAge" android:layout_toRightOf="@+id/textView1" android:layout_marginTop="24dp" android:id="@+id/btnInsert" android:text="Insert"></Button>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/btnInsert" android:layout_toRightOf="@+id/btnInsert" android:layout_marginLeft="26dp" android:id="@+id/btnClear" android:text="Clear"></Button>
+
+</RelativeLayout>
+
+</LinearLayout>

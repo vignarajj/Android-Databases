@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="wrap_content" android:layout_width="wrap_content">
+		<TextView android:text="@string/UserFormWelcome"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textSize="20px" android:gravity="center" />
+ 
+		<TextView android:text="@string/name" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textStyle="bold"
+			android:paddingTop="20px" android:paddingLeft="10px" />
+ 
+ 
+		<TableLayout android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+ 
+			<TableRow android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:paddingTop="20px">
+ 
+				<TextView android:text="@string/firstname"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:width="100px" android:paddingLeft="10px" />
+ 
+				<EditText android:id="@+id/FirstName" android:width="200px"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" />
+ 
+			</TableRow>
+ 
+			<TableRow android:layout_height="wrap_content"
+				android:layout_width="match_parent">
+ 
+				<TextView android:text="@string/lastname"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:paddingLeft="10px" />
+ 
+				<EditText android:id="@+id/LastName" android:width="200px"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" />
+ 
+			</TableRow>
+ 
+		</TableLayout>
+ 
+ 
+		<TextView android:text="@string/dob" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textStyle="bold"
+			android:paddingTop="20px" android:paddingLeft="10px" />
+ 
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:paddingTop="20px" android:paddingLeft="10px">
+			<TextView android:id="@+id/dateDisplay"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="ex: 8-4-1986" />
+ 
+			<Button android:id="@+id/pickDate" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Change the date"
+				android:layout_marginTop="10px" />
+		</LinearLayout>
+ 
+ 
+ 
+ 
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingLeft="10px">
+ 
+			<TextView android:text="@string/sex" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textStyle="bold"
+				android:paddingTop="20px" />
+ 
+			<RadioGroup android:id="@+id/radioGroup1"
+				android:orientation="horizontal" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<RadioButton android:text="Male" android:id="@+id/rbMale"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:paddingRight="20px" android:checked="true" />
+				<RadioButton android:text="Female" android:id="@+id/rbFemale"
+					android:layout_height="wrap_content" android:layout_width="wrap_content" />
+			</RadioGroup>
+ 
+		</LinearLayout>
+ 
+ 
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingLeft="10px">
+ 
+			<TextView android:text="@string/city" android:id="@+id/textView3"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textStyle="bold" android:paddingTop="20px"
+				android:paddingBottom="10px" />
+ 
+			<Spinner android:id="@+id/citySpiner" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:prompt="@string/city">
+			</Spinner>
+		</LinearLayout>
+ 
+		<LinearLayout android:orientation="vertical" android:id="@+id/Llayout"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:paddingLeft="10px">
+ 
+			<TextView android:text="@string/hobby" android:id="@+id/textView3"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textStyle="bold" android:paddingTop="20px"
+				android:paddingBottom="10px" />
+ 
+			<TableLayout android:layout_height="wrap_content"
+				android:layout_width="wrap_content">
+ 
+				<TableRow android:layout_height="wrap_content"
+					android:layout_width="match_parent">
+ 
+					<CheckBox android:text="@string/dance" android:id="@+id/cbDance"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:width="125px" />
+					<CheckBox android:text="@string/sing" android:id="@+id/cbSing"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+ 
+				</TableRow>
+ 
+				<TableRow android:layout_height="wrap_content"
+					android:layout_width="match_parent">
+ 
+					<CheckBox android:text="@string/cycle" android:id="@+id/cbCycle"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:width="125px" />
+					<CheckBox android:text="@string/swim" android:id="@+id/cbSwim"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" />
+ 
+				</TableRow>
+ 
+			</TableLayout>
+		</LinearLayout>
+ 
+		<Button android:text="@string/save" android:id="@+id/btnSave"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:width="80px" android:layout_marginTop="20px"
+			android:layout_marginBottom="20px" />
+ 
+ 
+	</LinearLayout>
+</ScrollView>
+ 

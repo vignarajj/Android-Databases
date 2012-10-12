@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, HomeActivity!</string>
+    <string name="app_name">UserForm</string>
+<string name="UserFormWelcome">User Registration Form</string>
+<string name="firstname">First Name</string>
+<string name="lastname">Last Name</string>
+<string name="dob">Date of Birth:</string>
+<string name="name">Enter your Name:</string>
+<string name="month">Month:</string>
+<string name="date">Date:</string>
+<string name="year">Year:</string>
+<string name="sex">Sex:</string>
+<string name="city">Choose your City:</string>
+ 
+<string name="hobby">Choose your Hobbies:</string>
+<string name="dance">Dancing</string>
+<string name="swim">Swimming</string>
+<string name="sing">Singing</string>
+<string name="cycle">Cycling</string>
+<string name="save">Save</string>
+<string name="addcity">Add a City:</string>
+</resources>

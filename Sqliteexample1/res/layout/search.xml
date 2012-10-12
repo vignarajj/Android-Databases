@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/LL" android:weightSum="1">
+
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello"
+    />
+
+<RelativeLayout android:layout_width="match_parent" android:gravity="left" android:layout_height="wrap_content" android:id="@+id/rlSearch">
+
+    <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:text="Search by ID :"></TextView>
+
+    <EditText android:inputType="textPersonName" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:id="@+id/txtSearch" android:layout_width="250dp"></EditText>
+
+    <Button android:layout_width="wrap_content" android:text="Search" android:id="@+id/btnSearch" android:layout_height="wrap_content" android:layout_alignTop="@+id/txtSearch" android:layout_toRightOf="@+id/txtSearch"></Button>
+
+</RelativeLayout>
+
+<RelativeLayout android:layout_height="312dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_gravity="center_vertical" android:id="@+id/rlRecord">
+
+    <TextView android:layout_width="wrap_content" android:text="Name:" android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_height="wrap_content"></TextView>
+
+    <EditText android:layout_width="match_parent" android:id="@+id/txtName" android:inputType="textPersonName" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_height="wrap_content">
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <EditText android:layout_width="match_parent" android:id="@+id/txtAge" android:inputType="phone" android:layout_below="@+id/textView2" android:layout_alignParentLeft="true" android:layout_height="wrap_content"></EditText>
+
+    <Button android:text="Delete" android:id="@+id/btnDelete" android:layout_height="wrap_content" android:layout_alignTop="@+id/btnEdit" android:layout_toRightOf="@+id/btnEdit" android:layout_width="160dp"></Button>
+
+    <Button android:layout_width="160dp" android:text="Edit" android:id="@+id/btnEdit" android:layout_height="wrap_content" android:layout_below="@+id/txtAge" android:layout_alignParentLeft="true" android:layout_marginTop="30dp"></Button>
+
+    <TextView android:layout_width="wrap_content" android:text="Age:" android:id="@+id/textView2" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_below="@+id/txtName" android:layout_alignParentLeft="true" android:layout_marginTop="14dp"></TextView>
+
+</RelativeLayout>
+
+</LinearLayout>
